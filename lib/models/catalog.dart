@@ -1,5 +1,12 @@
 import 'dart:convert';
 
+class CatalogModel {
+  static List<Item> items = [
+    Item(1, "Iphone 12", "Smartphone 1", 2500.00, "#33505a",
+        "https://specifications-pro.com/wp-content/uploads/2020/04/iPhone-12-2.jpg")
+  ];
+}
+
 class Item {
   final int id;
   final String name;
@@ -88,11 +95,4 @@ class Item {
         color.hashCode ^
         image.hashCode;
   }
-}
-
-class CatalogModel {
-  static List<Item> items = [
-    Item(1, "Iphone 12", "Smartphone 1", 2500.00, "#33505a",
-        "https://specifications-pro.com/wp-content/uploads/2020/04/iPhone-12-2.jpg")
-  ];
 }
