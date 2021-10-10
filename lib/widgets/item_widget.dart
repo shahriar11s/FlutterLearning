@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_null_comparison, prefer_const_constructors, unused_import
+// ignore_for_file: unnecessary_null_comparison, prefer_const_constructors, unused_import, avoid_print
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/models/catalog.dart';
 
