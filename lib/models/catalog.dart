@@ -1,7 +1,16 @@
+// ignore_for_file: null_closures
+
 import 'dart:convert';
 
 class CatalogModel {
   static List<Item> items = [];
+
+// Get Item by ID
+  Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+  // Get Item by position
+  Item getByPosition(int pos) => items[pos];
 }
 
 class Item {
