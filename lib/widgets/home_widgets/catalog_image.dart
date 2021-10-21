@@ -1,4 +1,4 @@
-// ignore_for_file: import_of_legacy_library_into_null_safe
+// ignore_for_file: import_of_legacy_library_into_null_safe, unused_import
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/widgets/themes.dart';

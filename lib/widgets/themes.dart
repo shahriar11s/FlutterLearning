@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use
+// ignore_for_file: prefer_const_constructors, deprecated_member_use, import_of_legacy_library_into_null_safe
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,7 +18,7 @@ class MyTheme {
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.black),
         titleTextStyle: TextStyle(color: Colors.black),
-        //textTheme: Theme.of(context).textTheme,
+        textTheme: Theme.of(context).textTheme,
       ));
 
   static ThemeData darkTheme(BuildContext context) => ThemeData(
@@ -33,7 +33,8 @@ class MyTheme {
           color: Colors.black,
           elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.white),
-          titleTextStyle: TextStyle(color: Colors.black),
+          titleTextStyle: TextStyle(color: Colors.white),
+          textTheme: Theme.of(context).textTheme,
         ),
       );
 
